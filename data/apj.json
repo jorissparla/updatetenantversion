@@ -1,0 +1,304 @@
+{
+  "results": [
+    {
+      "statement_id": 0,
+      "series": [
+        {
+          "name": "eln-tenants-data",
+          "columns": [
+            "time",
+            "Tenant",
+            "Tenant Name",
+            "Pck. Comb.",
+            "Tenant Status",
+            "Operational Status",
+            "Process Status",
+            "Farm Name"
+          ],
+          "values": [
+            [
+              1566786022000,
+              "AIRWORK_PRD",
+              "AIRWORK  HOLDINGS LIMITED",
+              "ce01021",
+              "active",
+              "online",
+              "idle",
+              "apse2prda"
+            ],
+            [
+              1566786026000,
+              "AIRWORK_TRN",
+              "AIRWORK  HOLDINGS LIMITED",
+              "ce01021",
+              "active",
+              "online",
+              "idle",
+              "apse2prda"
+            ],
+            [
+              1566786030000,
+              "AIRWORK_TST",
+              "AIRWORK  HOLDINGS LIMITED",
+              "ce01022",
+              "active",
+              "online",
+              "idle",
+              "apse2prda"
+            ],
+            [
+              1566786035000,
+              "CLDOPSNA001_DEV",
+              "CLDOPSNA001",
+              "ce01022",
+              "active",
+              "online",
+              "idle",
+              "apse2prda"
+            ],
+            [
+              1566786039000,
+              "CUBROCO_PRD",
+              "Cubro Ltd",
+              "ce01021",
+              "active",
+              "online",
+              "idle",
+              "apse2prda"
+            ],
+            [
+              1566786043000,
+              "CUBROCO_TRN",
+              "Cubro Ltd",
+              "ce01021",
+              "active",
+              "online",
+              "idle",
+              "apse2prda"
+            ],
+            [
+              1566786048000,
+              "CUBROCO_TST",
+              "Cubro Ltd",
+              "ce01021",
+              "active",
+              "online",
+              "idle",
+              "apse2prda"
+            ],
+            [
+              1566786057000,
+              "INFORCQAAP_PRD",
+              "INFORCQA_AP",
+              "ce01022",
+              "active",
+              "online",
+              "idle",
+              "apse2prda"
+            ],
+            [
+              1566786062000,
+              "INFORCQAAP_TST",
+              "INFORCQA_AP",
+              "ce01018",
+              "active",
+              "online",
+              "idle",
+              "apse2prda"
+            ],
+            [
+              1566813953000,
+              "AIRWORK_PRD",
+              "AIRWORK  HOLDINGS LIMITED",
+              "'ce01021'",
+              "active",
+              "online",
+              "idle",
+              "apse2prda"
+            ],
+            [
+              1566813957000,
+              "AIRWORK_TRN",
+              "AIRWORK  HOLDINGS LIMITED",
+              "'ce01021'",
+              "active",
+              "online",
+              "idle",
+              "apse2prda"
+            ],
+            [
+              1566813962000,
+              "AIRWORK_TST",
+              "AIRWORK  HOLDINGS LIMITED",
+              "'ce01022'",
+              "active",
+              "online",
+              "idle",
+              "apse2prda"
+            ],
+            [
+              1566813966000,
+              "CLDOPSNA001_DEV",
+              "CLDOPSNA001",
+              "'ce01022'",
+              "active",
+              "online",
+              "idle",
+              "apse2prda"
+            ],
+            [
+              1566813970000,
+              "CUBROCO_PRD",
+              "Cubro Ltd",
+              "'ce01021'",
+              "active",
+              "online",
+              "idle",
+              "apse2prda"
+            ],
+            [
+              1566813974000,
+              "CUBROCO_TRN",
+              "Cubro Ltd",
+              "'ce01021'",
+              "active",
+              "online",
+              "idle",
+              "apse2prda"
+            ],
+            [
+              1566813978000,
+              "CUBROCO_TST",
+              "Cubro Ltd",
+              "'ce01021'",
+              "active",
+              "online",
+              "idle",
+              "apse2prda"
+            ],
+            [
+              1566813982000,
+              "INFORCQAAP_DEM",
+              "INFORCQA_AP",
+              "'1060022'",
+              "active",
+              "online",
+              "idle",
+              "apse2prda"
+            ],
+            [
+              1566813986000,
+              "INFORCQAAP_PRD",
+              "INFORCQA_AP",
+              "'ce01022'",
+              "active",
+              "online",
+              "idle",
+              "apse2prda"
+            ],
+            [
+              1566813990000,
+              "INFORCQAAP_TST",
+              "INFORCQA_AP",
+              "'ce01018'",
+              "active",
+              "online",
+              "idle",
+              "apse2prda"
+            ],
+            [
+              1566813994000,
+              "INFORLNDEVOPSAP_TRN",
+              "InforLNDevopsLab_AP",
+              "'1060014'",
+              "active",
+              "online",
+              "idle",
+              "apse2prda"
+            ],
+            [
+              1566813998000,
+              "INFORLNDEVOPSAP_TST",
+              "InforLNDevopsLab_AP",
+              "'1060022'",
+              "active",
+              "online",
+              "idle",
+              "apse2prda"
+            ],
+            [
+              1566814001000,
+              "SUPTGDENA004_TST",
+              "SUPTGDENA004",
+              "'1060016'",
+              "active",
+              "online",
+              "idle",
+              "apse2prda"
+            ],
+            [
+              1566814005000,
+              "WATERCARE_AX1",
+              "Watercare Services Limited",
+              "'1060019'",
+              "active",
+              "online",
+              "idle",
+              "apse2prda"
+            ],
+            [
+              1566814009000,
+              "WATERCARE_DEM",
+              "Watercare Services Limited",
+              "'1060019'",
+              "active",
+              "online",
+              "idle",
+              "apse2prda"
+            ],
+            [
+              1566814013000,
+              "WATERCARE_DEV",
+              "Watercare Services Limited",
+              "'1060019'",
+              "active",
+              "online",
+              "idle",
+              "apse2prda"
+            ],
+            [
+              1566814017000,
+              "WATERCARE_PRD",
+              "Watercare Services Limited",
+              "'1060019'",
+              "active",
+              "online",
+              "idle",
+              "apse2prda"
+            ],
+            [
+              1566814021000,
+              "WATERCARE_TRN",
+              "Watercare Services Limited",
+              "'1060019'",
+              "active",
+              "online",
+              "idle",
+              "apse2prda"
+            ],
+            [
+              1566814025000,
+              "WATERCARE_TST",
+              "Watercare Services Limited",
+              "'1060019'",
+              "active",
+              "online",
+              "idle",
+              "apse2prda"
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}
