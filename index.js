@@ -91,14 +91,14 @@ async function run(farm) {
         let packagecombination = ft['Pck. Comb.'].split("'")[1]; //|| ft['Pck. Comb.'];
         //console.log('-' + packagecombination + '-' === '-' + ft['Pck. Comb.'] + '-');
         console.log('Changed', ft.Tenant, ft['Pck. Comb.'], packagecombination);
-        //  await request(url, mutation, { name: ft.Tenant, packagecombination });
+        await request(url, mutation, { name: ft.Tenant, packagecombination });
       } else {
-        console.log('No changes for :', ft.Tenant, 'on farm', farm);
+        // console.log('No changes for :', ft.Tenant, 'on farm', farm);
       }
     } else {
       let packagecombination = ft['Pck. Comb.'].split("'")[1];
       console.log('Not Found ', ft.Tenant, farm, packagecombination);
-      //  await request(url, newTenant, { name: ft.Tenant, packagecombination, farm });
+      await request(url, newTenant, { name: ft.Tenant, packagecombination, farm });
     }
   });
 }
