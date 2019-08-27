@@ -2,7 +2,7 @@ const { request } = require('graphql-request');
 const fetch = require('node-fetch');
 const fs = require('fs');
 let grafanaUrl =
-  'https://grafana.monocle.infor.com/api/datasources/proxy/293/query?db=telegraf&q=SELECT%20%22tenantId%22%20AS%20%22Tenant%22%2C%20%22name%22%20AS%20%22Tenant%20Name%22%2C%20%22packComb%22%20AS%20%22Pck.%20Comb.%22%2C%20%22tenantStatus%22%20AS%20%22Tenant%20Status%22%2C%20%22operationalState%22%20AS%20%22Operational%20Status%22%2C%20%22processStatus%22%20AS%20%22Process%20Status%22%2C%20%22farmName%22%20AS%20%22Farm%20Name%22%20FROM%20%22eln-tenants-data%22%20WHERE%20(%22farmName%22%20%3D~%20%2F%5Eapse2prda%24%2F)%20AND%20time%20%3E%3D%20now()%20-%2012h&epoch=ms';
+  'https://grafana.monocle.infor.com/api/datasources/proxy/293/query?db=telegraf&q=SELECT%20%22tenantId%22%20AS%20%22Tenant%22%2C%20%22name%22%20AS%20%22Tenant%20Name%22%2C%20%22packComb%22%20AS%20%22Pck.%20Comb.%22%2C%20%22tenantStatus%22%20AS%20%22Tenant%20Status%22%2C%20%22operationalState%22%20AS%20%22Operational%20Status%22%2C%20%22processStatus%22%20AS%20%22Process%20Status%22%2C%20%22farmName%22%20AS%20%22Farm%20Name%22%20FROM%20%22eln-tenants-data%22%20WHERE%20(%22farmName%22%20%3D~%20%2F%5E{farm}%24%2F)%20AND%20time%20%3E%3D%20now()%20-%2012h&epoch=ms';
 // 'https://grafana.monocle.infor.com/api/datasources/proxy/293/query?db=telegraf&q=SELECT%20%22tenantId%22%20AS%20%22Tenant%22%2C%20%22name%22%20AS%20%22Tenant%20Name%22%2C%20%22packComb%22%20AS%20%22Pck.%20Comb.%22%2C%20%22tenantStatus%22%20AS%20%22Tenant%20Status%22%2C%20%22operationalState%22%20AS%20%22Operational%20Status%22%2C%20%22processStatus%22%20AS%20%22Process%20Status%22%2C%20%22farmName%22%20AS%20%22Farm%20Name%22%20FROM%20%22eln-tenants-data%22%20WHERE%20(%22farmName%22%20%3D~%20%2F%5Eapse2prda%24%2F)%20AND%20time%20%3E%3D%20now()%20-%2012h&epoch=ms';
 
 const headers = {
@@ -48,9 +48,10 @@ const newTenant = `
 
 async function run(farm) {
   let results = null;
-  grafanaUrl = grafanaUrl.replace('{farm}', farm);
   try {
-    const response = await fetch(grafanaUrl, {
+    console.log(farm);
+    const newgrafanaUrl = grafanaUrl.replace('{farm}', farm);
+    const response = await fetch(newgrafanaUrl, {
       // credentials: 'include',
       // method: 'POST',
       // mode: 'no-cors',
@@ -81,18 +82,20 @@ async function run(farm) {
 
   fileTenants.map(async ft => {
     const aTen = tenants.find(t => t.name === ft.Tenant);
+    let farmName = ft['Farm Name'];
+    let farm =
+      farmName === 'euce1prda' ? 'Frankfurt' : farmName === 'usea1prda' ? 'Us-East-1' : 'Sydney';
     if (aTen) {
-      console.log('-' + aTen.packagecombination + '-', '-' + ft['Pck. Comb.'] + '-');
+      // console.log('-' + aTen.packagecombination + '-', '-' + ft['Pck. Comb.'] + '-');
       if ("'" + aTen.packagecombination + "'" !== ft['Pck. Comb.']) {
         let packagecombination = ft['Pck. Comb.'].split("'")[1]; //|| ft['Pck. Comb.'];
         //console.log('-' + packagecombination + '-' === '-' + ft['Pck. Comb.'] + '-');
         console.log('Changed', ft.Tenant, ft['Pck. Comb.'], packagecombination);
         //  await request(url, mutation, { name: ft.Tenant, packagecombination });
+      } else {
+        console.log('No changes for :', ft.Tenant, 'on farm', farm);
       }
     } else {
-      let farmName = ft['Farm Name'];
-      let farm =
-        farmName === 'euce1prda' ? 'Frankfurt' : (farmName = 'usea1prda' ? 'Us-East-1' : 'Sydney');
       let packagecombination = ft['Pck. Comb.'].split("'")[1];
       console.log('Not Found ', ft.Tenant, farm, packagecombination);
       //  await request(url, newTenant, { name: ft.Tenant, packagecombination, farm });
@@ -100,6 +103,6 @@ async function run(farm) {
   });
 }
 
-run('apse2prda');
 run('euce1prda');
 run('usea1prda');
+run('apse2prda');
