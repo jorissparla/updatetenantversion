@@ -46,6 +46,14 @@ const newTenant = `
   
   `;
 
+const updateUpdateStatus = `
+    mutation updateUpdateStatus {
+      updateUpdateStatus (name: "TenantList") {
+        id
+      }
+    }
+  `;
+
 async function run(farm) {
   let results = null;
   try {
@@ -101,6 +109,7 @@ async function run(farm) {
       await request(url, newTenant, { name: ft.Tenant, packagecombination, farm });
     }
   });
+  await request(url, updateUpdateStatus);
 }
 
 run('euce1prda');
