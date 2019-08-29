@@ -50,6 +50,7 @@ const updateUpdateStatus = `
     mutation updateUpdateStatus {
       updateUpdateStatus (name: "TenantList") {
         id
+        updatedAt
       }
     }
   `;
@@ -57,7 +58,7 @@ const updateUpdateStatus = `
 async function run(farm) {
   let results = null;
   try {
-    console.log(farm);
+    // console.log(farm, '\r\n');
     const newgrafanaUrl = grafanaUrl.replace('{farm}', farm);
     const response = await fetch(newgrafanaUrl, {
       // credentials: 'include',
@@ -109,7 +110,8 @@ async function run(farm) {
       await request(url, newTenant, { name: ft.Tenant, packagecombination, farm });
     }
   });
-  await request(url, updateUpdateStatus);
+  const result = await request(url, updateUpdateStatus);
+  console.log(farm, new Date(parseInt(result.updateUpdateStatus.updatedAt)));
 }
 
 run('euce1prda');
