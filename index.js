@@ -107,7 +107,7 @@ async function run(farm) {
     if (aTen) {
       // Found an Existing Tenant, update the version
       // console.log('-' + aTen.packagecombination + '-', '-' + ft['Pck. Comb.'] + '-');
-      if ("'" + aTen.packagecombination + "'" !== ft['Pck. Comb.']) {
+      if (aTen.packagecombination !== packagecombination) {
         try {
           //console.log('-' + packagecombination + '-' === '-' + ft['Pck. Comb.'] + '-');
           console.log('Changed', ft.Tenant, ft['Pck. Comb.'], packagecombination, ft['Pck. Comb.']);
