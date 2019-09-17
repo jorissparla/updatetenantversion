@@ -11,8 +11,8 @@ const headers = {
   Authorization:
     'Bearer eyJrIjoiM3dra1hyTzRzak4xYkNEdEg3OGl4eHFrb3FUUTNtM0QiLCJuIjoiRUxOVmlldyIsImlkIjoyNH0='
 };
-// const url = 'http://nlbavwixs.infor.com:4000';
-const url = 'http://localhost:4000';
+const url = 'http://nlbavwixs.infor.com:4000';
+// const url = 'http://localhost:4000';
 // const eu = require('./data/us.json');
 
 const query = `{ 
