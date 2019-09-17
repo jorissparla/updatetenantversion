@@ -11,7 +11,8 @@ const headers = {
   Authorization:
     'Bearer eyJrIjoiM3dra1hyTzRzak4xYkNEdEg3OGl4eHFrb3FUUTNtM0QiLCJuIjoiRUxOVmlldyIsImlkIjoyNH0='
 };
-const url = 'http://nlbavwixs.infor.com:4000';
+// const url = 'http://nlbavwixs.infor.com:4000';
+const url = 'http://localhost:4000';
 // const eu = require('./data/us.json');
 
 const query = `{ 
@@ -35,8 +36,8 @@ const mutation = `
   `;
 
 const newTenant = `
-  mutation addTenant($name: String!, $packagecombination:String!, $farm: String!){
-    createTenant(input:{name: $name, packagecombination:$packagecombination, farm:$farm}) {
+  mutation addTenant($name: String!, $packagecombination:String!, $farm: String!, $customername:String){
+    createTenant(input:{name: $name, packagecombination:$packagecombination, farm:$farm, customername: $customername}) {
        id
       name
       packagecombination
@@ -84,7 +85,8 @@ async function run(farm) {
       });
       return obj;
     })
-    .filter(o => o['Tenant Status'] !== 'deleted');
+    .filter(o => o['Tenant Status'] !== 'deleted')
+    .map(t => ({ ...t, customername: t['Tenant Name'] }));
   // console.log(fileTenants);
 
   const { tenants } = await request(url, query);
@@ -92,22 +94,38 @@ async function run(farm) {
   fileTenants.map(async ft => {
     const aTen = tenants.find(t => t.name === ft.Tenant);
     let farmName = ft['Farm Name'];
+    let customername = ft['customername'];
+    let packagecombination;
     let farm =
       farmName === 'euce1prda' ? 'Frankfurt' : farmName === 'usea1prda' ? 'Us-East-1' : 'Sydney';
+    const pk = ft['Pck. Comb.'];
+    if (pk.startsWith("'")) {
+      packagecombination = ft['Pck. Comb.'].split("'")[1]; //|| ft['Pck. Comb.'];
+    } else {
+      packagecombination = ft['Pck. Comb.'];
+    }
     if (aTen) {
+      // Found an Existing Tenant, update the version
       // console.log('-' + aTen.packagecombination + '-', '-' + ft['Pck. Comb.'] + '-');
       if ("'" + aTen.packagecombination + "'" !== ft['Pck. Comb.']) {
-        let packagecombination = ft['Pck. Comb.'].split("'")[1]; //|| ft['Pck. Comb.'];
-        //console.log('-' + packagecombination + '-' === '-' + ft['Pck. Comb.'] + '-');
-        console.log('Changed', ft.Tenant, ft['Pck. Comb.'], packagecombination);
-        await request(url, mutation, { name: ft.Tenant, packagecombination });
+        try {
+          //console.log('-' + packagecombination + '-' === '-' + ft['Pck. Comb.'] + '-');
+          console.log('Changed', ft.Tenant, ft['Pck. Comb.'], packagecombination, ft['Pck. Comb.']);
+          await request(url, mutation, { name: ft.Tenant, packagecombination });
+        } catch (error) {
+          console.log(error);
+        }
       } else {
         // console.log('No changes for :', ft.Tenant, 'on farm', farm);
       }
     } else {
-      let packagecombination = ft['Pck. Comb.'].split("'")[1];
-      console.log('Not Found ', ft.Tenant, farm, packagecombination);
-      await request(url, newTenant, { name: ft.Tenant, packagecombination, farm });
+      try {
+        //  packagecombination = ft['Pck. Comb.'].split("'")[1];
+        console.log('Not Found ', ft.Tenant, farm, packagecombination, ft['Pck. Comb.']);
+        await request(url, newTenant, { name: ft.Tenant, packagecombination, farm, customername });
+      } catch (e) {
+        console.log('Something went wrong with creating the tenant  ' + ft.Tenant, e);
+      }
     }
   });
   const result = await request(url, updateUpdateStatus);
