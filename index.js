@@ -85,7 +85,8 @@ async function run(farm) {
       });
       return obj;
     })
-    .filter(o => o["Tenant Status"] !== "deleted")
+    .filter(o => o["Tenant Status"] !== "deleted" )
+    .filter(o=>!(o["Tenant Status"] ==='inactive' && o["Operational Status"] ==='offline'))
     .map(t => ({ ...t, customername: t["Tenant Name"] }));
   // console.log(fileTenants);
 
