@@ -24,8 +24,8 @@ const query = `{
   }}`;
 
 const mutation = `
-  mutation updateTenantVersion($name: String!, $packagecombination:String!) {
-    updateTenantVersion(input: {name: $name, packagecombination:$packagecombination}) {
+  mutation updateTenantVersion($name: String!, $packagecombination:String!, $farm: String) {
+    updateTenantVersion(input: {name: $name, packagecombination:$packagecombination, farm:$farm}) {
       id
       name
       packagecombination
@@ -93,11 +93,11 @@ async function run(farm) {
   const { tenants } = await request(url, query);
 
   fileTenants.map(async (ft) => {
-    const aTen = tenants.find((t) => t.name === ft.Tenant);
     let farmName = ft["Farm Name"];
+    let farm = farmName === "euce1prda" ? "Frankfurt" : farmName === "usea1prda" ? "Us-East-1" : "Sydney";
+    const aTen = tenants.find((t) => t.name === ft.Tenant && t.farm === farm);
     let customername = ft["customername"];
     let packagecombination;
-    let farm = farmName === "euce1prda" ? "Frankfurt" : farmName === "usea1prda" ? "Us-East-1" : "Sydney";
     const pk = ft["Pck. Comb."];
     if (pk.startsWith("'")) {
       packagecombination = ft["Pck. Comb."].split("'")[1]; //|| ft['Pck. Comb.'];
@@ -111,7 +111,7 @@ async function run(farm) {
         try {
           //console.log('-' + packagecombination + '-' === '-' + ft['Pck. Comb.'] + '-');
           console.log("Changed", ft.Tenant, ft["Pck. Comb."], packagecombination, ft["Pck. Comb."]);
-          await request(url, mutation, { name: ft.Tenant, packagecombination, farm: farmName });
+          await request(url, mutation, { name: ft.Tenant, packagecombination, farm });
         } catch (error) {
           console.log(error);
         }
