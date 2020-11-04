@@ -8,8 +8,7 @@ let grafanaUrl =
 const headers = {
   Accept: "application/json",
   "Content-Type": "application/json",
-  Authorization:
-    "Bearer eyJrIjoiM3dra1hyTzRzak4xYkNEdEg3OGl4eHFrb3FUUTNtM0QiLCJuIjoiRUxOVmlldyIsImlkIjoyNH0="
+  Authorization: "Bearer eyJrIjoiM3dra1hyTzRzak4xYkNEdEg3OGl4eHFrb3FUUTNtM0QiLCJuIjoiRUxOVmlldyIsImlkIjoyNH0=",
 };
 const url = "http://nlbavwixs.infor.com:4000";
 // const url = 'http://localhost:4000';
@@ -65,7 +64,7 @@ async function run(farm) {
       // credentials: 'include',
       // method: 'POST',
       // mode: 'no-cors',
-      headers: headers
+      headers: headers,
     });
     // const response = await result.json();
     ({ results } = await response.json());
@@ -78,30 +77,25 @@ async function run(farm) {
   const fromFile = results[0].series[0].values;
 
   const fileTenants = fromFile
-    .map(v => {
+    .map((v) => {
       const obj = {};
       fileColumns.map((col, index) => {
         obj[col] = v[index];
       });
       return obj;
     })
-    .filter(o => o["Tenant Status"] !== "deleted")
-    .map(t => ({ ...t, customername: t["Tenant Name"] }));
+    .filter((o) => o["Tenant Status"] !== "deleted")
+    .map((t) => ({ ...t, customername: t["Tenant Name"] }));
   // console.log(fileTenants);
 
   const { tenants } = await request(url, query);
 
-  fileTenants.map(async ft => {
-    const aTen = tenants.find(t => t.name === ft.Tenant);
+  fileTenants.map(async (ft) => {
+    const aTen = tenants.find((t) => t.name === ft.Tenant);
     let farmName = ft["Farm Name"];
     let customername = ft["customername"];
     let packagecombination;
-    let farm =
-      farmName === "euce1prda"
-        ? "Frankfurt"
-        : farmName === "usea1prda"
-        ? "Us-East-1"
-        : "Sydney";
+    let farm = farmName === "euce1prda" ? "Frankfurt" : farmName === "usea1prda" ? "Us-East-1" : "Sydney";
     const pk = ft["Pck. Comb."];
     if (pk.startsWith("'")) {
       packagecombination = ft["Pck. Comb."].split("'")[1]; //|| ft['Pck. Comb.'];
@@ -114,14 +108,8 @@ async function run(farm) {
       if (aTen.packagecombination !== packagecombination) {
         try {
           //console.log('-' + packagecombination + '-' === '-' + ft['Pck. Comb.'] + '-');
-          console.log(
-            "Changed",
-            ft.Tenant,
-            ft["Pck. Comb."],
-            packagecombination,
-            ft["Pck. Comb."]
-          );
-          await request(url, mutation, { name: ft.Tenant, packagecombination });
+          console.log("Changed", ft.Tenant, ft["Pck. Comb."], packagecombination, ft["Pck. Comb."]);
+          await request(url, mutation, { name: ft.Tenant, packagecombination, farm: farmName });
         } catch (error) {
           console.log(error);
         }
@@ -131,24 +119,15 @@ async function run(farm) {
     } else {
       try {
         //  packagecombination = ft['Pck. Comb.'].split("'")[1];
-        console.log(
-          "Not Found ",
-          ft.Tenant,
-          farm,
-          packagecombination,
-          ft["Pck. Comb."]
-        );
+        console.log("Not Found ", ft.Tenant, farm, packagecombination, ft["Pck. Comb."]);
         await request(url, newTenant, {
           name: ft.Tenant,
           packagecombination,
           farm,
-          customername
+          customername,
         });
       } catch (e) {
-        console.log(
-          "Something went wrong with creating the tenant  " + ft.Tenant,
-          e
-        );
+        console.log("Something went wrong with creating the tenant  " + ft.Tenant, e);
       }
     }
   });
