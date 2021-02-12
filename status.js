@@ -79,3 +79,4 @@ async function run(farm) {
 run("euce1prda");
 run("usea1prda");
 run("apse2prda");
+run("apne1prda");
