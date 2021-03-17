@@ -46,6 +46,10 @@ async function run(farm) {
     console.log(e);
   }
   console.log(results, farm);
+  if (!results[0].series) {
+    console.log("farm not found", farm);
+    return null;
+  }
   const fileColumns = results[0].series[0].columns;
   // console.log(fileColumns);
   const fromFile = results[0].series[0].values;
@@ -67,7 +71,7 @@ async function run(farm) {
     const operational_status = tenant["Operational Status"];
     const process_status = tenant["Process Status"];
     const input = { name, tenant_status, operational_status, process_status };
-    console.log(input);
+    // console.log(input);
     try {
       await request(url, updateTenantStatus, { input });
     } catch (e) {

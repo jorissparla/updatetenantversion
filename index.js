@@ -2,11 +2,12 @@ const { request } = require("graphql-request");
 const fetch = require("node-fetch");
 const fs = require("fs");
 require("dotenv").config();
-let { BASEURL, TOKEN } = process.env;
+let { BASEURL, BASEURL2, TOKEN } = process.env;
 let monoclequery =
   "SELECT%20%22tenantId%22%20AS%20%22Tenant%22%2C%20%22name%22%20AS%20%22Tenant%20Name%22%2C%20%22packComb%22%20AS%20%22Pck.%20Comb.%22%2C%20%22tenantStatus%22%20AS%20%22Tenant%20Status%22%2C%20%22operationalState%22%20AS%20%22Operational%20Status%22%2C%20%22processStatus%22%20AS%20%22Process%20Status%22%2C%20%22farmName%22%20AS%20%22Farm%20Name%22%20FROM%20%22eln-tenants-data%22%20WHERE%20(%22farmName%22%20%3D~%20%2F%5E{farm}%24%2F)%20AND%20time%20%3E%3D%20now()%20-%2012h&epoch=ms";
 
 let grafanaUrl = `${BASEURL}query?db=telegraf&q=${monoclequery}`;
+let grafanaUrl2 = `${BASEURL2}query?db=telegraf&q=${monoclequery}`;
 const headers = {
   Accept: "application/json",
   "Content-Type": "application/json",
@@ -57,11 +58,11 @@ const updateUpdateStatus = `
     }
   `;
 
-async function run(farm) {
+async function run(farm, alt = false) {
   let results = null;
   try {
     // console.log(farm, '\r\n');
-    const newgrafanaUrl = grafanaUrl.replace("{farm}", farm);
+    const newgrafanaUrl = alt ? grafanaUrl2.replace("{farm}", farm) : grafanaUrl.replace("{farm}", farm);
     const response = await fetch(newgrafanaUrl, {
       // credentials: 'include',
       // method: 'POST',
@@ -74,6 +75,10 @@ async function run(farm) {
     console.log(e);
   }
   console.log(results, farm);
+  if (!results[0].series) {
+    console.log("farm not found", farm);
+    return null;
+  }
   const fileColumns = results[0].series[0].columns;
   // console.log(fileColumns);
   const fromFile = results[0].series[0].values;
@@ -96,7 +101,7 @@ async function run(farm) {
 
   fileTenants.map(async (ft) => {
     let farmName = ft["Farm Name"];
-    let farm = farmName === "euce1prda" ? "Frankfurt" : farmName === "usea1prda" ? "Us-East-1" : "Sydney";
+    let farm = farmName === "euce1prda" ? "Frankfurt" : farmName === "usea1prda" ? "Us-East-1" : farmName === "apne1prda" ? "Tokyo" : "Sydney";
     const aTen = tenants.find((t) => t.name === ft.Tenant && t.farm === farm);
     let customername = ft["customername"];
     let packagecombination;
@@ -142,7 +147,8 @@ async function run(farm) {
 run("euce1prda");
 run("usea1prda");
 run("apse2prda");
-run("euce1prda");
-run("usea1prda");
-run("apse2prda");
-run("apne1prda");
+run("euce1prda", true);
+run("usea1prda", true);
+run("apse2prda", true);
+run("apne1prda", true);
+// run("apne1prda");
