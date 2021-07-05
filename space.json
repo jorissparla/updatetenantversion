@@ -1,0 +1,1842 @@
+[
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "AALICO"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        602988127
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "ACTINIUM"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        593284551
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "ACTOP"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        317687346
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "AIRCOM"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        1694290360
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "ALKHALDI"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        71412067879
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "ALVAINDUSTRIES"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        100828274
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "AMPLEXEMIRATES"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        5523005468
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "AMS"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        34564275464
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "ANTARAS"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        281949527
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "ASINFOTRACK"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        2451174187
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "ASRY"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        1365059553
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "ASTONMARTIN"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        9535923759
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "ATLASTECH"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        1984000576
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "AUXITROLWESTON"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        600209709
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "AVG"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        594850688
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "AZTEKA"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        5310213193
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "BARMAJA"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        93483677
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "BERRANG"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        127037911
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "BONTAZ"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        568002529
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "BORBAELEWIS"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        2280926683
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "BREMAS"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        603350082
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "CAEM"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        1084845913
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "CAPITAMFG"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        619423206
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "CLDOPSEU002"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        200197131152
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "CLOUDOPSLN"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        1862779524
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "COLTGROUP"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        592271985
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "COMCLD"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        9738020961
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "CORAM"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        1187837005142
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "DENSOAUTO"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        29807097309
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "DIRKSGROUPGMBH"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        2530506507
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "DORBIT"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        879266893
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "EBGGROUP"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        568277041
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "EICKHOFF"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        966309168
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "ELGI"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        246824997837
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "ENERCITYERNEUERB"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        37551661362
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "EPEDAL"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        624414595
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "FANCOMBV"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        540040295693
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "FERRARI"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        603241377
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "FOCAL"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        12340317931
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "FONDIUM"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        11985811067
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "FRONIUS"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        3779489354
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "FULLWOODPACKO"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        1013462907
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "GROUPCEYSSENS"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        1356166663
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "GRUPPOCDM"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        2114390664
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "HITACHILTD"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        35346512
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "HYVAHOLDINGBV"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        28205461516
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "ICSEUWNA001"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        20450968002
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "INFORCQAEU"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        152330604
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "INFORERPUSERGRP"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        102472037
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "INFORLNDEVOPSEU"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        210666797
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "INGAROSSI"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        619328764
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "INGLASS"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        837602191
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "INTENTIA"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        1215630955
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "IPLC1"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        3096505650
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "IZERTIS"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        1472748552
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "JAMCO"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        1568746132
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "JOHNDEERE"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        1724492913525
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "JOYSONSAFETY"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        593102694
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "KENTINTROL"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        507079933384
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "KINETICS"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        594380386
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "KOMATSU"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        75340394454
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "KONVEKTA"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        452443760344
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "KORADE"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        201557724
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "KROHNE"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        14869394410
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "KROON"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        1028343363855
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "LHG"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        1978274056279
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "LILIUM"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        7446179131
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "LOTUSSERVICES"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        1986617243
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "LOUWERSHANIQUE"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        1432124141
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "MATTEXDUBAI"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        768855486863
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "MAZEPPA"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        7950040935
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "MECCANOTECNICA"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        84280496
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "MICHELINO2C"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        101631222676
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "MIDPORT"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        194734812
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "MLPC"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        2770949642
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "MORGANTI"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        1054724317
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "MUETHING"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        44830658395
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "NEDSCHROEF"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        168284741628
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "NEWAYSELECTRONIC"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        10864781896
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "NPORTS"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        1426993226
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "OMBVALVES"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        744107597
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "POLYCASA"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        803651057
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "POLYPAL"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        795484106
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "RABA"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        1782281771
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "RECIONOY"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        493102207254
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "REGLOPLAS"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        2319704007
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "RICARDO"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        226205717523
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "SEGAUTOMOTIVE"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        25827916731
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "SEMANTIC"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        762865496
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "SHERRITT"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        118118175
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "SILICIUMCONSULTI"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        232818630
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "SLSGDENA056"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        6376367456
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "SNT"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        210627583
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "SOMFY"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        578581845
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "STEVANATOGROUP"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        2855138309
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "STRUERS"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        48481543389
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "SUPEUCENA001"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        20605693613
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "SUPEUCENA002"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        579949126
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "SUPTGDENA009"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        29006531
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "SWAROVSKI"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        26778164152
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "TCITC"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        1738382760
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "TEXON"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        3644747611
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "TLD"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        3471903316
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "TOPRECORPORATION"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        365609838169
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "TRITONSHOWERSCO"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        6017287792
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "UKBIC"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        5135963832
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "UKNSICO"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        5262896073
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "VALMETCORP"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        1828750118
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "VANDAMMACHINE"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        116943156249
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "VMINDUSTRIES"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        1284815019
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "VRKUNNOSSAPITOOY"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        5327005108
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "WALOR"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        237578080078
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "WITTUR"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        282102543588
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "XIBIS"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        572482342
+      ]
+    ]
+  },
+  {
+    "name": "ElnDataVolume_V41",
+    "tags": {
+      "Customer": "ZANINIAUTOGRUPSA"
+    },
+    "columns": [
+      "time",
+      "sum"
+    ],
+    "values": [
+      [
+        "2021-07-04T23:46:27.818087694Z",
+        445517388829
+      ]
+    ]
+  }
+]
