@@ -91,6 +91,6 @@ async function run(farmName, x) {
 }
 
 run("euce1prda");
-// run("usea1prda", true);
-// run("apse2prda", true);
-// run("apne1prda", true);
+run("usea1prda", true);
+run("apse2prda", true);
+run("apne1prda", true);
